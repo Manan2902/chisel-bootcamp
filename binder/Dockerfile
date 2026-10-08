@@ -45,8 +45,6 @@ RUN mkdir -p ${HOME}/.jupyter/custom && \
        ${HOME}/.jupyter/custom/custom.js
 
 # Install Coursier and Almond (Scala Jupyter kernel).
-# Use the old JVM-based Coursier launcher because this
-# Bootcamp environment intentionally runs on Java 8.
 RUN curl -fL -o /tmp/coursier \
         https://github.com/coursier/coursier/releases/download/v2.1.18/coursier && \
     chmod +x /tmp/coursier && \
@@ -58,8 +56,8 @@ RUN curl -fL -o /tmp/coursier \
         --sources \
         --default=true \
         -o /tmp/almond && \
-    cp /tmp/almond /usr/local/bin/almond && \
-    chmod +x /usr/local/bin/almond && \
+    chmod +x /tmp/almond && \
+    /tmp/almond --install --global && \
     rm -f /tmp/coursier /tmp/almond && \
     rm -rf /root/.cache/coursier
 
