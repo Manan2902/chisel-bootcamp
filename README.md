@@ -3,8 +3,8 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)
 
 
-# Binder link that works (I made it)
-(https://binder.k8s.ucar.edu/jupyter/user/manan2902-chisel-bootcamp-mmkrx1m0/lab)
+# Binder link to use!
+(https://binder.k8s.ucar.edu/)
 
 **_For previous users of the bootcamp, we have upgraded from Scala 2.11 to Scala 2.12. If you are encountering errors, please follow the installation instructions to upgrade to 2.12._**
 
